@@ -2,46 +2,176 @@
 <html>
 
 	<head>
-		<meta https-equiv="content-type" content="text/html; charset=UTF-8" />
-		<meta name="AppleTitle" content="Transmission Help" />
-		<meta name="AppleIcon" content="../gfx/TransmissionIcon.png" />
-		<title>Transmission Help</title>
-		<meta name="robots" content="anchors" />
-		<link href="styles/TransIndex.css" rel="stylesheet" media="all">
+		<META http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link media="all" rel="stylesheet" href="../styles/task_style.css" />
+		<title>Getting Started</title>
 	</head>
-	<body bgcolor="white" marginheight="0" marginwidth="0" topmargin="0">
+	<body>
 
-<center><b>NOTE: these help files are getting older and further out-of-date<br>
-Please <a href="irc://irc.freenode.net/#transmission">help to update</a> them!</b></center>
-
-		<div id="frame">
-			<div id="contentleft">
-				<center>
-					<a href="gfx/TransWindow.png" target="_blank"><img title="Click to enlarge" src="gfx/TransWindow.png" height="auto" width="225" alt="Image of Transmission window" border="0"></a>
-					<h1><img class="icon" src="gfx/TransmissionIcon.png" alt="Transmission icon" height="32" width="32" border="0"> Transmission Help</h1>
-
-					<h4><a href="https://transmissionbt.com">transmissionbt.com</a></h4>
-				</center>
+		<A NAME="GettingStarted"></A>
+			<div id="banner">
+				<a name="menus"></a>
+				<div id="machelp">
+				<a class="bread" href="../index.html">Transmission Help</a>
+				</div>
+				<div id="index">
+				<a class="leftborder" href="../html/Index2.html">Index</a></div>
+				</div>
 			</div>
-			<div id="contentcenter"></div>
-			<div id="contentright">
 
-					<h2>Introduction</h2>
-					<p><a href="html/gettingstarted.html">Getting Started</a></p>
-					<p><a href="html/FAQ.html">Frequently Asked Questions</a></p>
-
-					<h2>Troubleshooting</h2>
-					<p><a href="html/portforward.html">Port Forwarding FAQ</a></p>
-					<p><a href="html/Speed.html">Maximizing Download Speed</a></p>
-
-					<h2>Index</h2>
-					<p><a href="html/Index2.html">Look up topics easily</a></p>
-
-					<h2>More Information</h2>
-					<p><a href="https://forum.transmissionbt.com">Transmission forums</a></p>
-					<p><a href="https://trac.transmissionbt.com/timeline">Trac timeline and tickets</a></p>
-
+			<div id="mainbox">
+				<div id="caticon">
+				<img src="../gfx/TransmissionIcon.png" alt="Adium X icon" height="32" width="32" border="0">
+				</div>
+			<div id="pagetitle">
+				<h1>Welcome to Transmission! </h1>
 			</div>
+				<p>
+					Transmission is a BitTorrent client.
+					It is used for peer to peer filesharing over the internet.
+					BitTorrent is a fast way of transferring files, because everyone who downloads must also upload to others.
+					This means speeds are only limited by the number of people connected to a given torrent - the more people the better!
+				</p>
+
+			<table class="dots" width="100%" border="0" cellspacing="0" cellpadding="0" summary="One column table with heading">
+				<tr>
+					<td class="blue" colspan="2">
+						<h3>How do I use it?</h3>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" width="250"><a href="../gfx/open.png" target="_blank"><img title="Click to enlarge" src="../gfx/open.png" height="auto" width="250" border="0"></a></td>
+					<td valign="top">
+						<p>
+							Download your file's associated 'torrent file' (extension .torrent). These are commonly found at <a href="https://en.wikipedia.org/wiki/BitTorrent_tracker">'tracker' websites</a>.
+						</p>
+						<p>
+							Once you have the torrent file, click Open and select it, or simply drag it into Transmission - downloading should start immediately.
+						</p>
+						<p>
+							Some sources provide the so-called 'magnet links' in order to download torrents. Transmission supports magnet links but you will probably have to
+							associate them with Transmission from within your browser first. Alternatively, you can select File &gt; Open URL... to manually add a magnet link.
+						</p>
+						<p>
+							You can pause and resume transfers at any time, so long as the files remain in your download folder.
+						</p>
+						<p>
+							It is good etiquette to share or 'seed' the file for a while (ie leave it uploading to others) once your download is complete.
+							That's how you downloaded the files in the first place!
+						</p>
+						<p>You can use a torrent's Properties window to adjust download/upload preferences on the fly.
+					</td>
+				</tr>
+			</table>
+				<br>
+			<table class="dots" width="100%" border="0" cellspacing="0" cellpadding="0" summary="One column table with heading">
+				<tr>
+					<td class="blue" colspan="2">
+						<h3>Can I create my own torrents?</h3>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" width="250"><a href="../gfx/creation.png" target="_blank"><img title="Click to enlarge" src="../gfx/creation.png" height="auto" width="250" border="0"></a></td>
+					<td valign="top">
+						<p>
+							Yes, choose 'New...' under the 'File' menu and when the 'New Torrent' dialogue opens:
+						</p>
+						<p>
+							1) Pull down 'Save To:' and select a folder where you want your new .torrent specification file to be created.  
+							(You can move it later if you want.)
+						</p>
+						<p>
+							2) To share (i.e. transmit) an entire folder of files choose 'Source folder:' and select a folder.  
+							All files in that folder will be shared in the torrent.  
+							Alternatively to share a single file choose 'Source file:' and select a filename.
+						</p>
+						<p>			
+							3) Enter the URL of one or more Trackers that you have permission to use.  
+							Their address will look something like this: (http//domain:portnumber/announce).
+							A BitTorrent tracker is a web service that regulates the communication between those downloading and uploading torrents. 
+							You will need at least one reference to a torrent tracker.  
+							This can be added and adjusted later in the torrent properties window under the Trackers tab.)
+						</p>
+						<p>							
+							4) Optionally enter a public 'Comment' to be attached to the torrent.
+						</p>
+						<p>
+							5) Optionally check the 'Private torrent' box to use private torrent tracker.  
+							Private trackers are not for better privacy, but rather for better performance.  
+							They are not open to just anyone to use.
+							This sets a flag in the info dict that marks that the client should only talk to the tracker listed (and not also talk directly to other peers).
+						</p>
+						<p>
+							Once you are done be sure to click 'New'. 
+							If you click 'Close' it will cancel the operation.
+							Transmission will automatically optimize the torrent file for what you are sharing. 
+							
+						</p>
+					</td>
+				</tr>
+			</table>
+				<br>
+
+				<table class="dots" width="100%" border="0" cellspacing="0" cellpadding="0" summary="One column table with heading">
+					<tr>
+						<td class="blue" colspan="2">
+							<h3>How can I organize my torrents?</h3>
+						</td>
+					</tr>
+					<tr>
+						<td valign="top" width="250"><a href="../gfx/sort.png" target="_blank"><img title="Click to enlarge" src="../gfx/sort.png" height="auto" width="250" border="0"></a></td>
+						<td valign="top">
+							<p>
+								Transmission allows you to sort your torrents by various criteria. Simply choose a Sort criterion in the View menu.
+							</p>
+							<p>
+								You can also filter your torrents by their activity state. Simply enable the Filter bar in the View menu.
+							</p>
+						</td>
+					</tr>
+				</table>
+					<br>
+			<table class="dots" width="100%" border="0" cellspacing="0" cellpadding="0" summary="One column table with heading">
+				<tr>
+					<td class="blue" colspan="2">
+						<h3>Where can I find more detailed information on my torrents?</h3>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" width="200"><a href="../gfx/inspector.png" target="_blank"><img title="Click to enlarge" src="../gfx/inspector.png" height="auto" width="200" border="0"></a></td>
+					<td valign="top">
+						<p>Click the Properties icon in the toolbar, or simply double-click any transfer in the main window.
+						<p>The Properties window gives you:
+							<ul>
+								<li>statistics on the torrent and files you are downloading</li>
+								<li>information about the peers and trackers you are connected to</li>
+								<li>options to fine-tune your bandwidth allocation</li>
+							<ul>
+						</p>
+					</td>
+				</tr>
+			</table>
+				<br>
+
+			<table class="dots" width="100%" border="0" cellspacing="0" cellpadding="0" summary="One column table with heading">
+				<tr>
+					<td class="blue" colspan="2">
+						<h3>Can I choose to download specific files?</h3>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" width="200"><a href="../gfx/fileselection.png" target="_blank"><img title="Click to enlarge" src="../gfx/fileselection.png" height="auto" width="200" border="0"></a></td>
+					<td valign="top">
+						<p>
+							Yes, double click the multi-file transfer to open the Properties window, and then click the 'Files' tab. Simply check the boxes next to the files you want to download (the default is all of them).
+						</p>
+						<p>
+							You can even set a download priority (High, Normal, Low) to each file, if you want some to finish faster than others. To do so, click on the priority column.
+						</p>
+					</td>
+				</tr>
+			</table>
+				<br>
 		</div>
 	</body>
 
